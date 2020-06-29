@@ -167,10 +167,12 @@ form .send-btn input:active {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  margin: 0;
 }
 .modal .modal-item .item-txt {
   width: 100%;
   max-width: 448px;
+  margin-right: 20px;
 }
 .modal .modal-item .item-txt p {
   font-size: 16px;
@@ -215,14 +217,6 @@ form .send-btn input:active {
   margin-bottom: 20px;
 }
 .modal .modal-item .item-txt ul li span {
-  font-weight: 600;
-}
-.modal .modal-item .item-txt ul li.txt-20 {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 24px;
-}
-.modal .modal-item .item-txt ul li.txt-20 span {
   font-weight: 600;
 }
 .modal .modal-item .item-txt .table-01 {
@@ -1259,6 +1253,9 @@ h2.title span {
     min-width: 304px;
     margin-right: 20px;
   }
+  .modal .close-btn {
+    right: 0;
+  }
 }
 @media (max-width: 991.8px) {
   .container {
@@ -1368,6 +1365,21 @@ h2.title span {
   .main_consultation .consultation-item .item-txt p {
     width: auto;
   }
+  .modal .modal-item {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .modal .modal-item .item-txt {
+    max-width: 768px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #cbcbcb;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .modal .modal-item .item-form {
+    max-width: 768px;
+  }
 }
 @media (max-width: 767.8px) {
   .container {
@@ -1412,6 +1424,9 @@ h2.title span {
   .main_contacts .contacts-map {
     margin-top: 20px;
     height: 426px;
+  }
+  .modal {
+    padding: 48px 84px;
   }
 }
 @media (max-width: 575.8px) {
@@ -1574,6 +1589,16 @@ h2.title span {
   .main_contacts {
     padding: 40px 0 20px 0;
   }
+  .modal {
+    padding: 32px 56px;
+  }
+  .modal .modal-title {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 40px;
+  }
 }
 @media (max-width: 479.8px) {
   .main_repairs .slider-02 .slick-prev,
@@ -1586,6 +1611,9 @@ h2.title span {
   .main_consultation .consultation-item .item-img {
     height: 240px;
   }
+  .modal {
+    padding: 24px 28px;
+  }
 }
 @media (max-width: 383.8px) {
   .main_repairs .slider-02 .slick-prev,
@@ -1597,5 +1625,8 @@ h2.title span {
   }
   .main_consultation .consultation-item .item-img {
     height: 160px;
+  }
+  .modal {
+    padding: 20px;
   }
 }
