@@ -1269,7 +1269,7 @@ h2.title span {
   }
   .main_special-offers {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 20px 0;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "a" "b" "c" "d" "e" "f";
