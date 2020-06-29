@@ -65,10 +65,10 @@
     <div class="header-nav">
         <div class="container">
             <div class="navigation">
-                <a class="nav-link" href="#">Специальные предложения</a>
-                <a class="nav-link" href="#">Услуги</a>
-                <a class="nav-link" href="#">Получить консультацию</a>
-                <a class="nav-link" href="#">Контакты</a>
+                <a class="nav-link" href="#nav-link-01">Специальные предложения</a>
+                <a class="nav-link" href="#nav-link-02">Услуги</a>
+                <a class="nav-link" href="#nav-link-03">Получить консультацию</a>
+                <a class="nav-link" href="#nav-link-04">Контакты</a>
             </div>
         </div>
     </div>
@@ -76,7 +76,7 @@
     <main class="main">
         <div class="container">
             <!-- 01 -->
-            <div class="main_special-offers">
+            <div id="nav-link-01" class="main_special-offers">
                 <div class="grid-a">
                     <div class="slider-01">
                         <div class="slide slide-01">
@@ -149,8 +149,9 @@
                     </div>
                 </div>
             </div>
+
             <!-- 02 -->
-            <h2 class="title">Наш сервис включает <span>полный пакет услуг</span></h2>
+            <h2 id="nav-link-02" class="title">Наш сервис включает <span>полный пакет услуг</span></h2>
 
             <div class="main_services">
                 <div class="services-item grid-a">
@@ -226,6 +227,7 @@
                     </a>
                 </div>
             </div>
+
             <!-- 03 -->
             <h2 class="title"><span>Наши работы</span> по кузовному ремонту</h2>
 
@@ -272,6 +274,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- 04 -->
             <h2 class="title"><span>Сотрудники</span> сервиса</h2>
 
@@ -321,8 +324,9 @@
                     </div>
                 </div>
             </div>
+
             <!-- 05 -->
-            <h2 class="title">У вас есть вопросы? <span>Мы готовы ответить на них</span></h2>
+            <h2 id="nav-link-03" class="title">У вас есть вопросы? <span>Мы готовы ответить на них</span></h2>
 
             <div class="main_consultation">
                 <div class="consultation-item">
@@ -355,6 +359,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- 06 -->
             <div class="main_additional">
                 <div class="additional-item grid-a">
@@ -382,8 +387,9 @@
                     </p>
                 </div>
             </div>
+
             <!-- 07 -->
-            <div class="main_contacts">
+            <div id="nav-link-04" class="main_contacts">
                 <div class="contacts-txt">
                     <div class="logo">
                         <div class="logo-img"></div>
@@ -422,9 +428,52 @@
                         frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
-
         </div>
     </main>
+
+    <!-- Modals -->
+
+    <!-- Modal-01 -->
+    <div class="modal-wrapper" id="modal-01">
+
+        <div class="modal">
+            <div class="close-btn"></div>
+
+            <h2 class="modal-title">
+                Приятное знакомство <span>на выгодных условиях!</span>
+            </h2>
+            <div class="modal-item">
+                <div class="item-txt"></div>
+
+                <div class="item-form">
+                    <h4>Записаться на услугу</h4>
+                    <p>Вы можете оставить заявку на консультацию, и наши сотрудники сервиса свяжутся с вами в
+                        ближайшее время.</p>
+                    <form action="mailto:example@mail.ru" method="post" enctype="text/plain">
+                        <div class="send-tel">
+                            <label for="tel">Телефон</label>
+                            <input type="tel" id="tel" name="tel" placeholder="+7">
+                        </div>
+                        <div class="send-check">
+                            <label class="custom-checkbox">
+                                Согласие на обработку запроса
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="custom-checkbox">
+                                Согласие на дальнейшую коммуникацию
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="send-btn">
+                            <input type="submit" value="Отправить заявку">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">
@@ -437,8 +486,10 @@
     <!-- Scripts -->
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="slick/slick.min.js"></script>
-    <script src="js/slider.js"></script>
     <script src="js/counter.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scrolling.js"></script>
+    <script src="js/slider.js"></script>
 
 </body>
 
