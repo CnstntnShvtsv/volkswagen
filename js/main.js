@@ -85,6 +85,12 @@ $('#btn_modal-14').click(function () {
 	$('body').css('overflow', 'hidden');
 });
 
+$('.btn_popup-01').click(function () {
+	$('#popup-01').fadeIn();
+	$('#popup-01').addClass('disabled');
+	$('body').css('overflow', 'hidden');
+});
+
 
 // закрыть на крестик
 $('.close-btn').click(function () {
@@ -94,10 +100,18 @@ $('.close-btn').click(function () {
 
 
 // закрыть по клику вне окна
-$(document).mouseup(function (e) {
-	var popup = $('.modal');
-	if (e.target != popup[0] && popup.has(e.target).length === 0) {
-		$('.modal-wrapper').fadeOut();
-		$('body').css('overflow', 'auto');
-	}
-});
+// $(document).mouseup(function (e) {
+// 	var popup = $('.modal');
+// 	if (e.target != popup[0] && popup.has(e.target).length === 0) {
+// 		$('.modal-wrapper').fadeOut();
+// 		$('body').css('overflow', 'auto');
+// 	}
+// });
+
+// $(document).mouseup(function (e) {
+// 	var popup = $('.popup');
+// 	if (e.target != popup[0] && popup.has(e.target).length === 0) {
+// 		$('.modal-wrapper').fadeOut();
+// 		$('body').css('overflow', 'auto');
+// 	}
+// });
