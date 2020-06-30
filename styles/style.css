@@ -591,6 +591,7 @@ form .send-btn input:active {
   border-radius: 2px;
   overflow: hidden;
   width: 100%;
+  max-width: 1320px;
   position: relative;
 }
 .main_special-offers .grid-a .slider-01 {
@@ -1630,4 +1631,6 @@ h2.title span {
   .modal {
     padding: 20px;
   }
+}
+}
 }
