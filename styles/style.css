@@ -8,6 +8,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+  font-display: swap;
 }
 a,
 a.btn_type-01,
@@ -1268,11 +1269,17 @@ h2.title span {
     justify-self: flex-end;
   }
   .main_special-offers {
-    display: grid;
-    grid-gap: 20px 0;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "a" "b" "c" "d" "e" "f";
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .main_special-offers .grid-a,
+  .main_special-offers .grid-b,
+  .main_special-offers .grid-c,
+  .main_special-offers .grid-d,
+  .main_special-offers .grid-e {
+    margin-bottom: 20px;
   }
   .main_special-offers .grid-a .slider-01 .slide {
     height: 536px;
