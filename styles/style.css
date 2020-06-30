@@ -1257,7 +1257,7 @@ h2.title span {
     right: 0;
   }
 }
-@media screen and (max-width: 991.8px) {
+@media screen and (max-width: 991.8px), screen and (orientation: portrait) {
   .container {
     padding: 0 32px;
   }
