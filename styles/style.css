@@ -1181,7 +1181,7 @@ h2.title span {
   min-width: 272px;
   padding: 40px 0;
 }
-@media (max-width: 1199.8px) {
+@media screen and (max-width: 1199.8px) {
   .container {
     padding: 0 48px;
   }
@@ -1257,7 +1257,7 @@ h2.title span {
     right: 0;
   }
 }
-@media (max-width: 991.8px) {
+@media screen and (max-width: 991.8px) {
   .container {
     padding: 0 32px;
   }
@@ -1381,7 +1381,7 @@ h2.title span {
     max-width: 768px;
   }
 }
-@media (max-width: 767.8px) {
+@media screen and (max-width: 767.8px) {
   .container {
     padding: 0 24px;
   }
@@ -1429,7 +1429,7 @@ h2.title span {
     padding: 48px 84px;
   }
 }
-@media (max-width: 575.8px) {
+@media screen and (max-width: 575.8px) {
   .header-grid {
     grid-template-columns: 1fr;
     grid-template-areas: "a" "b" "c" "d" "e";
@@ -1600,7 +1600,7 @@ h2.title span {
     margin-bottom: 40px;
   }
 }
-@media (max-width: 479.8px) {
+@media screen and (max-width: 479.8px) {
   .main_repairs .slider-02 .slick-prev,
   .main_repairs .slider-02 .slick-next {
     top: 120px;
@@ -1615,7 +1615,7 @@ h2.title span {
     padding: 24px 28px;
   }
 }
-@media (max-width: 383.8px) {
+@media screen and (max-width: 383.8px) {
   .main_repairs .slider-02 .slick-prev,
   .main_repairs .slider-02 .slick-next {
     top: 80px;
